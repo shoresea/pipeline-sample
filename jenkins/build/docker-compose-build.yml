@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     # BUILD_TAG is a jenkins variable which is generated for every build
-    image: 'mav3n/maven-project-4-jenkins:$BUILD_TAG'
+    image: 'maven-project-4-jenkins:$BUILD_TAG'
     build:
       context: .
       dockerfile: java.dockerfile
